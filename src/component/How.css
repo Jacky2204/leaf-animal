@@ -1,0 +1,12 @@
+div{
+    height: 500px;
+    width: 80vw;
+    border: 3px solid black;
+    margin: 20px;
+}
+
+.box {
+    height: 400px;
+    width: 60vw;
+    border: 3px solid black;
+}
