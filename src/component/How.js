@@ -1,10 +1,8 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./How.css";
 import main_img from "./how-img/how1.jpg";
-import p1 from "./how-img/p1.webp";
-import p2 from "./how-img/p2.webp";
-import p3 from "./how-img/p3.webp";
-import p4 from "./how-img/p4.webp"
+
+
 
 // create a main component(function)
 export function Main() {
@@ -36,21 +34,21 @@ export function Main() {
 }
 
 // create a main component(function)
-export function Process() {
+export function Process(props) {
   return (
     <>
       <section className="process">
         <div className="pbox1">
           {/* images */}
-          <div className="img">
-            <img src={p1} alt="cat" className="pimg" />
-          </div>
+          
+            <img src={props.i1} alt="" className="pimg" />
+          
 
           {/* paragraph */}
           <div className="ppara">
-            <h1 className="pheading">1</h1>
+            <h1 className="pheading">{props.h1}</h1>
             <p className="p-para">
-              Visit our website <br></br> www.leafanimals.com
+            {props.p1}
             </p>
           </div>
         </div>
@@ -58,19 +56,16 @@ export function Process() {
         <div className="pbox2">
           {/* paragraph */}
           <div className="ppara">
-            <h1 className="pheading">2</h1>
+            <h1 className="pheading">{props.h2}</h1>
             <p className="p-para">
-              On the homepage select 'Dogs' or 'Cats' to browse either.
-              <br></br> <br></br> ​
-              Alternatively, you can click on 'Adopt' in the menu bar and choose
-              from there.
+              {props.p2}
             </p>
           </div>
 
           {/* images */}
-          <div className="img">
-            <img src={p2} alt="cat" className="pimg" />
-          </div>
+          
+            <img src={props.i2} alt="." className="pimg" />
+
         </div>
       </section>
     </>
