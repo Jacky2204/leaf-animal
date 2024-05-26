@@ -1,7 +1,7 @@
 import React from "react";
-import { Main } from "./../component/How.js";
-import { Process } from "./../component/How.js";
-import { Dic } from "./../component/How.js";
+import { Main } from "../Component/How.js";
+import { Process } from "../Component/How.js";
+import { Dic } from "../Component/How.js";
 
 export function How() {
   return (
