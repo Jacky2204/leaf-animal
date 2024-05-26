@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-import { Main } from "../Component/How.js";
-import { Process } from "../Component/How.js";
-import { Dic } from "../Component/How.js";
-=======
+
 import { Main } from "./../component/How.js";
 import { Process } from "./../component/How.js";
 import { Dic } from "./../component/How.js";
@@ -12,7 +8,6 @@ import p2 from "./../component/how-img/p2.webp";
 import p3 from "./../component/how-img/p3.webp";
 import p4 from "./../component/how-img/p4.webp";
 import p5 from "./../component/how-img/p5.webp";
->>>>>>> 9550f15d7ac8274f1261157b1d452688379d5844
 
 export function How() {
   return (

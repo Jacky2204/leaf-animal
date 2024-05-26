@@ -1,62 +1,87 @@
-import 'bootstrap/dist/css/bootstrap.css'
-import nav from '../Component/navbar img/nimg.webp'
+import "bootstrap/dist/css/bootstrap.css"
+// import navbar from '../Component/navbar img/nimg.webp'
 import './Navbar.css'
+import nav from '../Component/navbar-img/nimg.webp'
+import img1 from '../Component/navbar-img/1st.webp'
+import facebook from '../Component/navbar-img/facebook.png'
+import instagram from '../Component/navbar-img/instagram (1).png'
+import twetter from '../Component/navbar-img/twitter.png'
+
 
 
 export function Navbar() {
   return (
     <>
-      <nav class=" back navbar navbar-expand-lg navbar-light  position-fixed top-0 nav" style="z-index:100;width:100%">
-        <div class=" container-fluid">
-          <img class=" ms-5 nimg navbar-brand" src="./../imges/nav.png" alt=""/>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="ms-5 nav-link active" aria-current="page" href="./home.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="ms-5 nav-link" href="./gardaning.html">Adopt</a>
-              </li>
-              <li class="nav-item">
-                <a class="ms-5 nav-link" href="./rooms.html">Foster</a>
-              </li>
-              
-                <li class="nav-item">
-                  <a class="ms-5 nav-link" href="./about.html">Sponsor</a>
-                </li>
-                <li class="nav-item">
-                  <a class="ms-5 nav-link" href="./contact.html">How To</a>
-                </li>
-                <li class="nav-item">
-                  <a class="ms-5 nav-link" href="./contact.html">Create</a>
-                </li>
-                <li class="nav-item">
-                  <a class="ms-5 nav-link" href="./contact.html">Profile</a>
-                </li>
-                <li class="nav-item">
-                  <a class="ms-5 nav-link" href="./contact.html">FF Workstor</a>
-                </li>
-                <li class="nav-item">
-                  <a class="ms-5 nav-link" href="./contact.html">Blog</a>
-                </li>
-              
-            </ul>
-            {/* <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> */}
+      <div className="main">
+        <img src={nav} />
+
+        <ul className="name">
+
+
+          <li> <a href='About.js'>About</a></li>
+          <li> <a href='#'>Adopt</a></li>
+          <li> <a href='#'>Foster</a></li>
+          <li> <a href='#'>Sponsor</a></li>
+          <li> <a href='#'>How to</a></li>
+          <li> <a href='#'>Create Profile</a></li>
+          <li> <a href='#'>FF Workshop</a></li>
+          <li> <a href='#'>Blog</a></li>
+
+        </ul>
+      </div>
+        <div className="one">
+          <img className="img1" src={img1}/>
+          <div className="h1">
+          <h1>Find your forever companion</h1>
+          <button>Start Now</button>
           </div>
-        </div>
-      </nav>
-
+       </div>
       
 
-      
+      <div className="fut">
+      <div className="futter">
+        <ul>
+          <li>About Us</li>
+          <li>Leaf Friend</li>
+          <li>Leaf Partners</li>
+        </ul>
+
+        <ul>
+          <li>Adopt</li>
+          <li>forever</li>
+          <li>Sponsor</li>
+        </ul>
+
+        <ul>
+          <li>Find a Dog</li>
+          <li>Find a Cat</li>
+          <li>Find a home</li>
+          <li>Find a Sponsor</li>
+          <li>Contact Us</li>
+        </ul>
+
+        <ul>
+          <li>Terms of use</li>
+          <li>Refund Policy</li>
+          <li>Members Conduct</li>
+          <li>FAQs</li>
+          <li>Adoption Terms</li>
+          <li>Upload Terms</li>
+          <li>Consultation Terms</li>
+          
+        </ul>
+        <img src={nav}/>
+    </div>
+       <div >
+       <center>
+        <a> <img className="icon" src={facebook}/></a>
+        <a> <img className="icon" src={instagram}/></a>
+        <a> <img className="icon" src={twetter}/></a>
+       </center>
+
+       </div>
+
+      </div>
     </>
 
   );
