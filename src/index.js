@@ -1,36 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import App from './App';
 
-// import page link to display on browser 
-import {How} from './view/How.js';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+
+
+const routes=createBrowserRouter(
+  [
+    {
+      path:'./About',
+      element:<About/>
+    },
+
+    {
+      path:'./App',
+      element:<App/>
+    }
+  ]
+)
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    // call pages
-<How/>
+ RouterProvider(routes)
 );
 
 
-// import { createBrowserRouter,RouterProvider } from 'react-router-dom';
-
-
-// const routes=createBrowserRouter(
-//   [
-//     {
-//       path:'./About',
-//       element:<About/>
-//     },
-
-//     {
-//       path:'./App',
-//       element:<App/>
-//     }
-//   ]
-// )
-
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//  RouterProvider(routes)
-// );
