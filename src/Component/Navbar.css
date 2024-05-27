@@ -1,5 +1,84 @@
-.box{
-    height: 100px;
-    width: 100px;
-    border: 3px solid black;
+body{
+    overflow-x: hidden;
+}
+.main{
+    height: 130px;
+    width: 100%;
+    border: 1px solid rgb(209, 202, 202);
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+height: 60px;
+width: 250px;
+margin: 40px 40px;
+}
+.name{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;
+}
+li{
+    margin-left: 25px;
+    font-size: 20px;
+    /* text-decoration: none; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    
+}
+
+li a{
+    text-decoration: none;
+    font-family: "poppins-semibold", "poppins", sans-serif;
+    font-weight: 100;
+    color: rgb(81, 78, 78);
+}
+.img1{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    
+}
+ .h1{
+    position: relative;
+    text-align: center;
+    padding: 200px;
+    color:white;
+   
+   
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    
+}
+button{
+    border-radius: 50px;
+    color: rgb(137, 129, 129);
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 29px;
+     background-color: white;
+}
+.futter{
+    display: flex;
+    justify-content: space-evenly;
+    
+    text-decoration: none;
+    /* background-color: rgb(195, 173, 184);  */
+    padding: 30px;
+    color: rgb(89, 89, 97);
+    text-decoration: none;
+}
+.fut{
+    background-color: rgb(243, 230, 237); 
+    
+}
+.icon{
+    height: 40px;
+    width: 40px;
+    border: 4px double rgb(56, 54, 54);
+    border-radius: 50px;
+    margin: 10px;
 }
