@@ -124,18 +124,62 @@
 
 
 
-
-
-
-
-
-
-
-
-
-.dic{
-    height: 85vh;
-    width: 100vw;
-    border: 3px solid black;
+/* block */
+.block{
+    height: 32vh;
+    width: 87vw;
+    margin: 30px auto;
+    background-color: #d9baca;
     /* margin: 20px auto; */
+}
+
+.b-para{
+    height: 32vh;
+    width: 65vw;
+    margin: auto;
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+
+.b-para h2{
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 600;
+    color: white;
+    font-family: "avenir-lt-w01_85-heavy1475544", "avenir-lt-w05_85-heavy", sans-serif;
+}
+
+.b-para li,p{
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 100;
+    color: rgb(24, 24, 24);
+    font-family: "avenir-lt-w01_85-heavy1475544", "avenir-lt-w05_85-heavy", sans-serif;
+}
+
+.b-para span{
+    color: rgb(61, 155, 233);
+    text-decoration: underline;
+}
+
+
+/* button */
+
+.btn{
+    height: 50px;
+    display: block;
+    margin: 50px auto;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    background-color: #d9baca;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: white;
+    font-family: "avenir-lt-w01_85-heavy1475544", "avenir-lt-w05_85-heavy", sans-serif;
+}
+
+.btn:hover{
+    background-color: #d9baca84;
+    color: white;
 }
