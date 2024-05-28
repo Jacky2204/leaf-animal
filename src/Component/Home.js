@@ -102,11 +102,33 @@ return(
 
 </div>
 
+
+<div className="mainicon2" >
+
+ <div>
+
+ </div>
+
+ <div>
+
+ </div>
+
+</div>
+
   </>
 )
 }
 
-
+export function Last(){
+  return(
+    <>
+   <section className="last">
+ <h1>To keep our services affordable,<br></br> please consider supporting our work <br></br>and buy us a bone</h1>
+ <input className="lastb" type="submit" value="Buy us a bone"/>
+   </section>
+    </>
+  )
+}
 
 export function Footer() {
   return (
